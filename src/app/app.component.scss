@@ -1,0 +1,95 @@
+.menu {
+    height: 60px;
+	width: auto;
+
+}
+ 
+.main-section {
+    background-image: linear-gradient(#111111,#116732); 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20% 0;
+    text-align: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.name {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.inro {
+	height: 10em;
+  display: flex;
+  align-items: center
+}
+.top-button {
+    margin-bottom:5px;
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}
+
+.example-1
+{
+     animation: shadow-pulse 1s infinite;
+}
+
+.body {
+	margin: 0;
+	width: 100%;
+	height: 80vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h3 {
+	color: #eee;
+	font-weight: 100;
+}
+
+h5 {
+	color:#eee;
+	font-weight:300;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+

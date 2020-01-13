@@ -1,0 +1,41 @@
+.about-section {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50x;
+}
+
+.header {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    img {
+        width: 25%;
+        height: 25%;
+    
+    }
+
+
+    #parent {
+        display: flex;
+      }
+      #narrow {
+        flex: 1;
+
+        /* Just so it's visible */
+      }
+      #wide {
+        flex: 1;
+        /* Grow to rest of container */
+        background:white;
+        /* Just so it's visible */
+      }

@@ -1,0 +1,61 @@
+.contact-section {
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+
+    background-color: #252934;
+}
+h2 {
+    margin-bottom: 2%;
+}
+
+.question {
+    color: #3ec1c8;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+
+}
+
+.box {
+    margin-top: 3%;
+    width: 25%;
+    margin-left: 37.5%;
+    display: flex;
+    flex-wrap: wrap;
+      text-align: center;
+      vertical-align: middle;
+    
+    
+}
+
+.text {
+    background-color: #1e252c;
+    width: 30%;
+    flex: 0 0 100%; /* explanation below */
+//   margin: 5px;
+}
+
+.text-area {
+    background-color: #1e252c;
+    min-width: 100%;
+    min-height: 175px;
+    
+}
+
+.butn {
+    margin-top: 5px;
+    background-color: #252934;
+    margin-bottom: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.butn:hover{
+    background-color: #3ec1c8;
+}
+
+input[type="text"] {  
+    text-align: left; 
+}

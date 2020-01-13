@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+$ionicons-font-path: "~ionicons/dist/fonts";@import "~ionicons/dist/scss/ionicons.scss";
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .navbar-toggler {display: none;}
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
+
+.footer {
+    background-color: #6ec688;
+}
+footer div a {
+    color: white !important;
+}
+footer {
+    background-color: #1b242f !important;
+    position: relative;
+}
+
+#up {
+    background-color: #e3266d;
+    width: 50px;
+    color: white;
+    padding-top: 10px;
+    bottom: 85%;
+    position: absolute;
+    margin:0 auto;
+    left:0;
+    right:0;
+    &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+}
+
+#social {
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    height: 20px;
+    vertical-align: top;
+    &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+          background-color: #0bb6d4;
+        }
+      }
+}
+
+.header {
+    padding-top: 30px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    
+}
+
+.header2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+

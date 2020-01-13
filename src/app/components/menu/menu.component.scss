@@ -1,0 +1,20 @@
+.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  #link {
+    color: blue;
+  }
+  
+  
+  .content{
+    height: 200vh;
+  }
+
+  #mainNav {
+    background-color: #1b242f;
+  }

@@ -1,0 +1,33 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: rgba(182, 182, 182, 0.753); /* Grey background */
+  padding: 0;
+}
+
+.skills {
+  height: 15px;
+  text-align: right; /* Right-align text */
+  vertical-align: top;
+  font-size: smaller;
+
+  color: rgb(255, 255, 255); /* White text color */
+}
+
+.java {width: 80%; background-color: #38c4bd;} /* Green */
+.js {width: 60%; background-color: #38c4bd;} /* Blue */
+.css {width: 30%; background-color: #38c4bd;} /* Red */
+.html {width: 50%; background-color: #38c4bd;} /* Dark Grey */
+.serverless {width: 70%; background-color: #38c4bd;} /* Dark Grey */
+.docker {width: 60%; background-color: #38c4bd;} /* Dark Grey */
+.kubernetes {width: 50%; background-color: #38c4bd;} /* Dark Grey */
+.spring {width: 50%; background-color: #38c4bd;} /* Dark Grey */
+.vertx {width: 80%; background-color: #38c4bd;} /* Dark Grey */
+.cassandra {width: 50%; background-color: #38c4bd;} /* Dark Grey */
+.lang {
+  height: 3px;
+  font-size: smaller;
+}
