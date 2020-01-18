@@ -31,33 +31,104 @@ h2 {
   margin: 5px;
 }
 
-#spotback:hover {
+@media screen and (min-width: 900px) {
+    #spotback {
+        background-image: url('./../../../assets/spotback.png');
+        background-size: 100%;
+       }
+       
+       #spotback:hover {
+           background-color: darkgrey;
+           background-image: none;
+       }
+       
+       #cal {
+        background-image: url('./../../../assets/calstate.png');
+       }
+       
+       #cal:hover {
+           background-color: darkgrey;
+           background-image: none;
+           background-size: 100%;
+       }
+       
+       #recapi {
+        background-image: url('./../../../assets/recapi.png');
+       }
+       
+       #recapi:hover {
+           background-color: darkgrey;
+           background-image: none;
+           background-size: 100%;
+       }
+       
+       #reimburse {
+        background-image: url('https://github.com/Dylancorbus/myProjects/blob/master/Employee_Reimbursement_System/images/admin.PNG?raw=true');
+       }
+       
+       #reimburse:hover {
+           background-color: darkgrey;
+           background-image: none;
+           background-size: 100%;
+       }
+       
+       #atm {
+        background-image: url('./../../../assets/atm.png');
+       }
+       
+       #atm:hover {
+           background-color: darkgrey;
+           background-image: none;
+           background-size: 100%;
+       }
+       
+       #algo {
+        background-image: url('./../../../assets/algo.png');
+       }
+       
+       #algo:hover {
+           background-color: darkgrey;
+           background-image: none;
+           background-size: 100%;
+       }
+}
+
+@media screen and (max-width:700px) {
+    .card-deck {
+
+        display: inline;
+    }
+    .card {
+        width: 80%;
+        margin: auto;
+    }
+
+    
+}
+
+.spotbackModal {
     background-image: url('./../../../assets/spotback.png');
     background-size: 100%;
 }
 
-#cal:hover {
-    background-image: url('./../../../assets/calstate.png');
-    background-size: 100%;
+.recapiModal {
+
+}
+.calstateModal {
+
 }
 
-#recapi:hover {
-    background-image: url('./../../../assets/recapi.png');
-    background-size: 100%;
+.ersModal {
+
 }
 
-#reimburse:hover {
-    background-image: url('https://github.com/Dylancorbus/myProjects/blob/master/Employee_Reimbursement_System/images/admin.PNG?raw=true');
-    background-size: 100%;
+.atmModal {
+
 }
 
-#atm:hover {
-    background-image: url('./../../../assets/atm.png');
-    background-size: 100%;
+.algoModal {
+
 }
 
-#algo:hover {
-    background-image: url('./../../../assets/algo.png');
-    background-size: 100%;
-}
+
 

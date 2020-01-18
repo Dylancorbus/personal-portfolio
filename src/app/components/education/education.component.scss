@@ -24,7 +24,7 @@ h2 {
 .blog {
     // width: 80%;
     display: flex;
-  flex-wrap: wrap;
+//   flex-wrap: wrap;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
@@ -43,3 +43,14 @@ img {
 //     flex: 1 0 30%; /* explanation below */
 //   margin: 5px;
 // }
+
+
+@media screen and (max-width:640px) {
+    .card-deck {
+        width: 100%;
+        display: inline;
+    }
+    .card {
+        width: 100%;
+    }
+}

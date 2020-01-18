@@ -2,6 +2,7 @@
     background-color: rgb(255, 255, 255);
     padding-top: 50px;
     margin-bottom: 50px;
+    
 }
 
 h2 {
@@ -32,10 +33,50 @@ h2 {
   padding-top: 40px;
 }
 
+.post1:hover {
+    background-image: none;
+    background-color: darkgray;
+}
+.post2:hover {
+    background-image: none;
+    background-color: darkgray;
+}
+.post3:hover {
+    background-image: none;
+    background-color: darkgray;
+}
+
 .post1 {
     background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2017-11/30/0/campaign_images/buzzfeed-prod-web-03/you-should-be-doing-what-you-love-not-sitting-a-5-2-27516-1512019126-0_dblbig.jpg?output-format=auto&output-quality=auto&resize=400:*;');
 }
 
 .post2 {
     background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2017-11/6/15/asset/buzzfeed-prod-web-02/sub-buzz-21736-1509999128-12.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto');
+}
+
+.post3 {
+    background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2020-01/16/4/asset/43915460648c/sub-buzz-1671-1579149813-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto');
+}
+
+@media screen and (max-width:1000px) {
+    .card-deck {
+        display: inline;
+    }
+    .card {
+        margin: auto;
+        width: 80%;
+    }
+
+    .post1 {
+        background-image: none;
+        background-color: darkgray;
+    }
+    .post2 {
+        background-image: none;
+        background-color: darkgray;
+    }
+    .post3 {
+        background-image: none;
+        background-color: darkgray;
+    }
 }

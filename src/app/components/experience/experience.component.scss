@@ -18,6 +18,8 @@
 }
 #job:hover {
     background-color: #e3266d;
+    transition: ease-in;
+    transition-duration: .3s;
     color: white;
     span {
         color: black;
@@ -25,6 +27,8 @@
 }
 
 #job span:hover {
+    transition: ease-in;
+    transition-duration: .3s;
     background-color: #39c4bd;
     color: white;
 }
@@ -62,9 +66,12 @@
 .list {
     list-style-type: none;
     width: 90%;
-    padding: 20px;
+    padding: 10px 20px;
+    min-height: 400px;
+    margin: auto;
     text-align: left;
     color: white;
+    background-color: #1e252c;
     
 }
 

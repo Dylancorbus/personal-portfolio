@@ -4,42 +4,42 @@
     </u>
 
     <div class="card-deck proj center">
-        <div class="card border-secondary mb-3 project" id="spotback">
+        <div class="card border-secondary mb-3 project" id="spotback" (click)="open(spotback)">
             <div class="card-header">Spotback</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Mobile app</h5>
               <p class="card-text">A peer to peer parking application where users can communicate open parking spots to other users.</p>
             </div>
           </div>
-          <div class="card border-secondary mb-3 project" id="recapi">
+          <div class="card border-secondary mb-3 project" id="recapi" (click)="open(recapi)">
             <div class="card-header">Recapi</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Web app</h5>
               <p class="card-text">A simple app where you input your ingridients and it outputs a recipe you can make.</p>
             </div>
           </div>
-          <div class="card border-secondary mb-3 project" id="cal">
+          <div class="card border-secondary mb-3 project" id="cal" (click)="open(calstate)">
             <div class="card-header">Cal State Products</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Ecommerce Website</h5>
               <p class="card-text">Cal state products sold camping and outdoor equipment.</p>
             </div>
           </div>
-          <div class="card border-secondary mb-3 project" id="reimburse">
+          <div class="card border-secondary mb-3 project" id="reimburse" (click)="open(ers)">
             <div class="card-header">Reimbursement System</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Web app</h5>
               <p class="card-text">A simple website where a user can submit a reimbusement request, and an admin can approve it.</p>
             </div>
           </div>
-          <div class="card border-secondary mb-3 project" id="atm">
+          <div class="card border-secondary mb-3 project" id="atm" (click)="open(atm)">
             <div class="card-header">Atm</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Command line tool</h5>
               <p class="card-text">Simple command line app with the functionality of an atm.</p>
             </div>
           </div>
-          <div class="card border-secondary mb-3 project" id="algo">
+          <div class="card border-secondary mb-3 project" id="algo" (click)="open(algo)">
             <div class="card-header">Algorithm Practice</div>
             <div class="card-body text-dark">
               <h5 class="card-title">Java file</h5>
@@ -48,3 +48,189 @@
           </div>
     </div>
 </div>
+
+
+
+<ng-template #spotback let-modal>
+  
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Spotback</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Spotback is a peer to peer parking service and platform. Users can post a spot they are parked in, 
+      and another user will be matched to one of these open spaces. The user will be directed to the 
+      spot and will swap with the user parked in the spot and pay a small fee for the service.</p>
+    <h4>Co-Founder/Backend Engineer</h4>
+    <ul>
+      <li>Built</li>
+      <li>Designed</li>
+      <li>Countinuously Manage</li>
+      All Backend services and website
+      <h5>
+        Tech Stack
+      </h5>
+      <ul>
+        <li>Angular 6</li>
+        <li>Java 8</li>
+        <li>Vertx</li>
+        <li>Node.js</li>
+        <li>Serverless</li>
+        <li>AWS Lambda</li>
+        <li>DynamoDB</li>
+        <li>Firebase</li>
+      </ul>
+      <p>
+        Please check out Spotback <a href="http://spotback.io" target="blank">here</a>.
+      </p>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+<ng-template #recapi let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Recapi</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>We are RecAPI and our app will allow users to login and keep track of their virtual cabinet representing 
+      their ingredients. These ingredients will be used to determine what recipes can be created. It will allow 
+      users to search for recipes with certain ingredients, create their own recipes, and will also make 
+      recommendations based on the user's pantry.</p>
+    <ul>
+      <li>Built</li>
+      <li>Designed</li>
+      <li>Countinuously Manage</li>
+      All Backend services and website
+      <br>
+      <h5>
+        Tech Stack
+      </h5>
+      <ul>
+        <li>Angular 6</li>
+        <li>Java 8</li>
+        <li>Spring Boot</li>
+        <li>AWS RDS Orcale 12c</li>
+        <li>AWS EC2</li>
+      </ul>
+      <p>
+        Please check out Recapi <a target="blank" href="http://recapiapp.github.io">here</a>.
+      </p>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+<ng-template #calstate let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Cal State Products</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Cal State Products was an ecommerce website selling outdoor and camping equipment and products. Cal State Products
+      leverages strategic partnerships in order to source sustainable and profitable products.
+    </p>
+    <h4>Co-founder</h4>
+    <ul>
+      <li>Customer support</li>
+      <li>Managed and fulfilled all orders</li>
+      <li>Grew instagram from 1000 to 4000 followers</li>
+      <li>Handled sourcing of all products</li>
+      <li>Grossed over $8k in sales</li>
+      
+      </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+<ng-template #ers let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Employee Reimbursement System</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    ERS is a webapp where one can submit expense reports. An admin user is able to login and approve reimbursement requests.
+    <ul>
+      <li>Built</li>
+      <li>Designed</li>
+      <li>Countinuously Manage</li>
+      All Backend services and website
+    </ul>
+      <h5>
+        Tech Stack
+      </h5>
+      <ul>
+        <li>Angular 6</li>
+        <li>Java 8</li>
+        <li>JDBC</li>
+        <li>AWS RDS Orcale 12c</li>
+        <li>AWS EC2</li>
+      </ul>
+      <p>
+        Please check out ERS <a target="blank" href="https://github.com/Dylancorbus/myProjects/tree/master/Employee_Reimbursement_System">here</a>.
+      </p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+<ng-template #atm let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Atm Console App</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>ATM command line application. Accessess a locally installed oracle database and provides atm functionality.border-secondary
+      User is able to transfer, withdrawl and deposit virtual funds.
+    </p>
+    <ul>
+      <li>Built</li>
+      <li>Designed</li>
+      command line java application
+    </ul>
+      <h5>
+        Tech Stack
+      </h5>
+      <ul>
+        <li>Java 8</li>
+        <li>JDBC</li>
+        <li>Orcale 12c</li>
+      </ul>
+      <p>
+        Please check out ATM app <a target="blank" href="https://github.com/Dylancorbus/myProjects/tree/master/Atm_Console_Application">here</a>.
+      </p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+<ng-template #algo let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Algorithms</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    I have come across algorithms in interviews and while learning to code. 
+    <a target="blank" href="https://github.com/Dylancorbus/myProjects/tree/master/Atm_Console_Application">here</a> 
+    is where i keep the problems i have solved.
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>

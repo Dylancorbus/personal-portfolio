@@ -20,8 +20,8 @@ h2 {
 
 .box {
     margin-top: 3%;
-    width: 25%;
-    margin-left: 37.5%;
+    width: 30%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
       text-align: center;
@@ -34,13 +34,14 @@ h2 {
     background-color: #1e252c;
     width: 30%;
     flex: 0 0 100%; /* explanation below */
-//   margin: 5px;
+    color: white;
 }
 
 .text-area {
     background-color: #1e252c;
     min-width: 100%;
     min-height: 175px;
+    color: white;
     
 }
 
@@ -58,4 +59,11 @@ h2 {
 
 input[type="text"] {  
     text-align: left; 
+}
+
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 50%;
+    }
 }

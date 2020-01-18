@@ -1,5 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -8,12 +7,13 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  @ViewChild('stickyMenu', null) menuElement: ElementRef;
+  @ViewChild('stickyMenu', {static: false}) menuElement: ElementRef;
 
   sticky: boolean = false;
   elementPosition: any;
 
-  constructor(private router: Router) { }
+  constructor() { 
+  }
 
   ngOnInit() {
   }
