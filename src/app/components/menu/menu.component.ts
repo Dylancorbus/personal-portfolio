@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular
 })
 export class MenuComponent implements OnInit {
 
-  @ViewChild('stickyMenu', {static: false}) menuElement: ElementRef;
+  @ViewChild('stickyMenu', null) menuElement: ElementRef;
 
   sticky: boolean = false;
   elementPosition: any;
@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
     handleScroll(){
       const windowScroll = window.pageYOffset;
       if(windowScroll >= this.elementPosition){

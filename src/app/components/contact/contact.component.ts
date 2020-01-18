@@ -23,9 +23,7 @@ export class ContactComponent implements OnInit {
     if(this.name && this.email && this.message) {
       if(this.count < 1) {
         ++this.count;
-        console.log(`${this.name, this.email, this.message}`)
         this.emailService.sendEmail(this.name, this.email, this.message).subscribe((data: any) => {
-          console.log(data);
         });
       }
     }

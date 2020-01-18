@@ -1,31 +1,31 @@
 <div class="blog-section center mt-2">
-    <u>
-        <h2 class="text-dark">Blog</h2>
-    </u>
+  <u>
+    <h2 class="text-dark">Blog</h2>
+  </u>
 
-    <div class="card-deck blog center">
-        <div class="card border-secondary mb-3 post post1">
-            <div class="card-body text-dark">
-              <h5 class="card-title">You Should Be Doing What You Love, Not Sitting At A Desk From 9-5!</h5>
-              <a href="https://www.buzzfeed.com/dylancorbus/you-should-be-doing-what-you-love-not-sitting-at-37kww" target="blank">Here</a>
-            </div>
+  <div class="card-deck blog center">
+    <div class="card border-secondary mb-3 post" *ngFor="let post of this.blogService.allBlogs; let i = index" 
+    id="card123" (click)="open(spotback)">
+      <div class="card-body text-dark">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p>{{ post.description }}</p>
+        <ng-template #spotback let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">{{ post.title }}</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="card border-secondary mb-3 post post2">
-            <div class="card-body text-dark">
-              <h5 class="card-title">What Thanksgiving Means For Travel!</h5>
-              <a href="https://www.buzzfeed.com/dylancorbus/what-thanksgiving-means-for-travel-37kww" target="blank">Here</a>
-            </div>
+          <div class="modal-body">
+            <h5>{{ post.description }}</h5>
+            <img src="{{ post.image }}" alt="" class="pic"><br>
+            <p class="mt-5">{{ post.body }}</p>
           </div>
-          <div class="card border-secondary mb-3 post post3">
-            <div class="card-body text-dark">
-              <h5 class="card-title text-dark">New Parking App For San Jose!</h5>
-              <a href="https://www.buzzfeed.com/dylancorbus/new-parking-app-for-san-jose-a5e7k9nov9?utm_source=dynamic&utm_campaign=bfsharecopy" target="blank">Here</a>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" (click)="modal.close('Save click')">Ok</button>
           </div>
-          <div class="card border-secondary mb-3 post">
-            <div class="card-body text-dark">
-              <h5 class="card-title">More articles comming soon</h5>
-            </div>
-          </div>
+        </ng-template>
+      </div>
     </div>
+  </div>
 </div>

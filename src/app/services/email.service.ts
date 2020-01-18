@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmailService {
-  apiURL: string = 'https://6xt6f4vzu8.execute-api.us-east-1.amazonaws.com/dev/email';
+  apiURL: string = 'https://wxmfru1xv8.execute-api.us-east-1.amazonaws.com/dev/email';
   constructor(public httpClient: HttpClient) { }
 
 
