@@ -36,15 +36,11 @@ export class BlogComponent implements OnInit {
 
   getAllBlogs() {
     this.blogService.getBlogs().subscribe((blgs: any) => {
-      console.log(blgs);
       this.blogService.allBlogs = blgs.posts;
-      console.log(this.blogService.allBlogs);
     });
   }
 
   setBgImg(idx: number) {
-    console.log(this.blogService.allBlogs.blogs[0].image)
-    console.log(this.blogService.allBlogs.blogs[idx].image)
     let styles = {
       'background-image': `url(${this.blogService.allBlogs.blogs[idx].image})`
     };
