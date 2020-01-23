@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/icon.png">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156269091-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156269091-1');
+  </script>
+
+<link rel="stylesheet" href="styles.cb6a5b9ea17e22370c7d.css"></head>
+
+<body>
+  <app-root></app-root>
+<script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="scripts.dda2d1846184eca6c160.js" defer></script><script src="main-es2015.93ebe60276c1d60c00a1.js" type="module"></script><script src="main-es5.93ebe60276c1d60c00a1.js" nomodule defer></script></body>
+<footer class="footer text-black text-center py-5">
+
+  <button class="btn grow" id="up">
+    <ion-icon name="arrow-round-up"></ion-icon>
+  </button>
+  <div class="container">
+    <a class="btn grow" id="social" href="https://www.facebook.com/dc.corbus" target="blank">
+      <ion-icon size="small" name="logo-facebook"></ion-icon>
+    </a>
+    <a class="btn grow" id="social" href="https://www.github.com/dylancorbus" target="blank">
+      <ion-icon size="small" name="logo-github"></ion-icon>
+    </a>
+    <a class="btn grow" id="social" href="https://www.linkedin.com/in/dylan-corbus-6354a9125" target="blank">
+      <ion-icon size="small" name="logo-linkedin"></ion-icon>
+    </a>
+    <p class="m-0 small text-light">Copyright &copy; Dylan Corbus 2019</p>
+  </div>
+</footer>
+<script>
+  document.querySelector('#up').addEventListener("click", () => {
+    document.querySelector('#home').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  });  
+</script>
+
+</html>
