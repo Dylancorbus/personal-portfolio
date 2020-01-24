@@ -36,7 +36,9 @@ export class BlogComponent implements OnInit {
 
   getAllBlogs() {
     this.blogService.getBlogs().subscribe((blgs: any) => {
-      this.blogService.allBlogs = blgs.posts;
+      console.log(blgs);
+      this.blogService.allBlogs = blgs;
+      console.log(this.blogService.allBlogs);
     });
   }
 
