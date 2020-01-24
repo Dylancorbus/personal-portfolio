@@ -7,8 +7,8 @@ import { AllBlogs } from '../models/all-blogs';
   providedIn: 'root'
 })
 export class BlogService {
-  getPost: string = 'http://finddylan.com:80/blog';
-  getAllBlogs: string = 'http://finddylan.com:80/allBlogs';
+  getPost: string = 'https://finddylan.com:80/blog';
+  getAllBlogs: string = 'https://finddylan.com:80/allBlogs';
 
   @Input() blogPost: BlogPost;
   @Input() allBlogs: AllBlogs;
