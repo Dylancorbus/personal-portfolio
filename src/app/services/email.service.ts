@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmailService {
-  apiURL: string = '172.26.0.229:3000/email';
+  apiURL: string = '172.26.0.229/email';
   constructor(public httpClient: HttpClient) { }
 
 
